@@ -30,6 +30,8 @@ def main() -> None:
     out = Path("/output/entry.txt")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(POEM, encoding="utf-8")
+    print(f"wrote {len(POEM)} code points to {out}")
+    print(POEM)
 
 
 if __name__ == "__main__":
